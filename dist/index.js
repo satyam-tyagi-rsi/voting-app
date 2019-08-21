@@ -80,6 +80,7 @@ App = {
     renderTasks: async () => {
       // Load the total task count from the blockchain
       const candidatesCount = await App.election.candidatesCount()
+      console.log(candidatesCount);
       const candidatesResults = $("#candidatesResults");
       candidatesResults.empty();
 
