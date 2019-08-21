@@ -50,7 +50,7 @@ App = {
   
     loadContract: async () => {
       // Create a JavaScript version of the smart contract
-      const election = await $.getJSON('Election.json')
+      const election = await $.getJSON('contracts/Election.json')
       App.contracts.Election = TruffleContract(election)
       App.contracts.Election.setProvider(App.web3Provider)
   
